@@ -20,7 +20,62 @@ namespace Curso
             //    //validando se existe migrations pendentes
             //}
 
-            InserirDados();
+            //InserirDados();
+            InserirDadosEmMassa();
+        }
+
+        private static void InserirDadosEmMassa()
+        {
+            var produto = new Produto
+            {
+                Descricao = "Produto Teste",
+                CodigoBarras = "12365447856981",
+                Valor = 10m,
+                TipoProduto = TipoProduto.MercadoriaParaRevenda,
+                Ativo = true
+            };
+
+            var cliente = new Cliente
+            {
+                Nome = "Usuario Teste",
+                CEP = "88887775",
+                Cidade = "Itabaiana",
+                Estado = "SP",
+                Telefone = "11236541236",
+            };
+
+            var listaClientes = new[]
+            {
+                new Cliente
+                {
+                Nome = "Usuario Teste 2",
+                CEP = "88887775",
+                Cidade = "Itabaiana",
+                Estado = "SP",
+                Telefone = "11236541236",
+                },
+                new Cliente
+
+            {
+                Nome = "Usuario Teste 3",
+                CEP = "88887775",
+                Cidade = "Itabaiana",
+                Estado = "SP",
+                Telefone = "11236541237",
+                }
+            };
+
+            using var db = new Data.ApplicationContext();
+            // db.AddRange(produto, cliente);
+
+            db.Set<Cliente>().AddRange(listaClientes);
+
+            //db.AddRange(listaClientes);
+
+            var registros = db.SaveChanges();
+            Console.WriteLine($"Total Registro(s): {registros}");
+            Console.ReadKey();
+
         }
 
         private static void InserirDados()

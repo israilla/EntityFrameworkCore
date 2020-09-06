@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UNauK8bVEWLeIkbF3swtBix5z62Z3eBpk6p7sI6Bpc83CxMFHFw9/F0GwOHmohyWmxuqBNWLGFa8LhGZVs5KCA==",
+  "dgSpecHash": "znh7zLfyYl+5m0zKHjPt1wzNez8pZYBLV0V15y19pyAzKxcMe0Cv1E1EnDWFS20Ftx1fOUpp0Gw2ijXlFiskcg==",
   "success": true,
   "projectFilePath": "D:\\Users\\Israilla\\source\\repos\\CursoEFCore\\Curso\\Curso\\Curso.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,10 @@
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.7\\microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512",
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.logging\\3.1.7\\microsoft.extensions.logging.3.1.7.nupkg.sha512",
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.7\\microsoft.extensions.logging.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.7\\microsoft.extensions.logging.configuration.3.1.7.nupkg.sha512",
+    "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.7\\microsoft.extensions.logging.console.3.1.7.nupkg.sha512",
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.options\\3.1.7\\microsoft.extensions.options.3.1.7.nupkg.sha512",
+    "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.7\\microsoft.extensions.options.configurationextensions.3.1.7.nupkg.sha512",
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.7\\microsoft.extensions.primitives.3.1.7.nupkg.sha512",
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\Israilla\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",

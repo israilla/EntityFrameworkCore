@@ -53,7 +53,10 @@ D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\C
 D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Curso.runtimeconfig.dev.json
 D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Curso.dll
 D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Curso.pdb
-D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.csproj.CoreCompileInputs.cache
 D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.dll
 D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.pdb
 D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.genruntimeconfig.cache
+D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Users\Israilla\source\repos\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.csproj.CoreCompileInputs.cache

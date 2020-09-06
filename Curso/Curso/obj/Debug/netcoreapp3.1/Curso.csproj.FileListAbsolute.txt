@@ -1,0 +1,4 @@
+D:\Users\Israilla\source\repos\CursoEFCore\CursoEFCore\Curso\Curso\bin\Debug\netcoreapp3.1\Curso.exe
+D:\Users\Israilla\source\repos\CursoEFCore\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.csprojAssemblyReference.cache
+D:\Users\Israilla\source\repos\CursoEFCore\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.AssemblyInfoInputs.cache
+D:\Users\Israilla\source\repos\CursoEFCore\CursoEFCore\Curso\Curso\obj\Debug\netcoreapp3.1\Curso.AssemblyInfo.cs

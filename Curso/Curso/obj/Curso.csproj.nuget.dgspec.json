@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Israilla\\source\\repos\\EntityFrameworkCore\\Curso\\Curso\\Curso.csproj": {}
+    "D:\\Users\\Israilla\\source\\repos\\CursoEFCore\\Curso\\Curso\\Curso.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Israilla\\source\\repos\\EntityFrameworkCore\\Curso\\Curso\\Curso.csproj": {
+    "D:\\Users\\Israilla\\source\\repos\\CursoEFCore\\Curso\\Curso\\Curso.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Israilla\\source\\repos\\EntityFrameworkCore\\Curso\\Curso\\Curso.csproj",
+        "projectUniqueName": "D:\\Users\\Israilla\\source\\repos\\CursoEFCore\\Curso\\Curso\\Curso.csproj",
         "projectName": "Curso",
-        "projectPath": "D:\\Users\\Israilla\\source\\repos\\EntityFrameworkCore\\Curso\\Curso\\Curso.csproj",
+        "projectPath": "D:\\Users\\Israilla\\source\\repos\\CursoEFCore\\Curso\\Curso\\Curso.csproj",
         "packagesPath": "C:\\Users\\Israilla\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Israilla\\source\\repos\\EntityFrameworkCore\\Curso\\Curso\\obj\\",
+        "outputPath": "D:\\Users\\Israilla\\source\\repos\\CursoEFCore\\Curso\\Curso\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

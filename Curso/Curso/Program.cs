@@ -28,7 +28,7 @@ namespace Curso
             //CadastrarPedido();
             //ConsultarPedidoCarregamentoAdiantado();
             //AtualizarDados();
-            RemoverRegistros();
+            //RemoverRegistros();
         }
 
         private static void RemoverRegistros()

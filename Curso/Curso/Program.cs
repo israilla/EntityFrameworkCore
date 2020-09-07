@@ -26,9 +26,35 @@ namespace Curso
             //InserirDadosEmMassa();
             //ConsultarDados();
             //CadastrarPedido();
-           ConsultarPedidoCarregamentoAdiantado();
+            //ConsultarPedidoCarregamentoAdiantado();
+            AtualizarDados();
         }
 
+        private static void AtualizarDados()
+        {
+            using var db = new Data.ApplicationContext();
+            //var cliente = db.Clientes.Find(1);
+
+            var cliente = new Cliente
+            {
+                Id =1
+            };
+
+            var clienteDesconectado = new
+            {
+                Nome = "Cliente desconectado passo 3",
+                Telefone = "7851245632"
+            };
+
+            //rastrear o objeto
+            db.Attach(cliente);
+            db.Entry(cliente).CurrentValues.SetValues(clienteDesconectado);
+
+            //db.Clientes.Update(cliente);
+            db.SaveChanges();
+
+            Console.ReadKey();
+        }
         private static void ConsultarPedidoCarregamentoAdiantado()
         {
             using var db = new Data.ApplicationContext();
@@ -88,7 +114,6 @@ namespace Curso
 
             Console.ReadKey();
         }
-
         private static void InserirDadosEmMassa()
         {
             var produto = new Produto
@@ -142,7 +167,6 @@ namespace Curso
             Console.ReadKey();
 
         }
-
         private static void InserirDados()
         {
             var produto = new Produto

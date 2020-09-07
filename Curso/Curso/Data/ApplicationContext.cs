@@ -26,7 +26,7 @@ namespace Curso.Data
                 p=>p.EnableRetryOnFailure(
                     maxRetryCount:2,
                     maxRetryDelay: TimeSpan.FromSeconds(5),
-                    errorNumbersToAdd:null));
+                    errorNumbersToAdd:null).MigrationsHistoryTable("CursoEFCore"));
         }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder)

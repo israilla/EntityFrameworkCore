@@ -3,6 +3,7 @@ using Curso.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Curso
@@ -23,9 +24,53 @@ namespace Curso
 
             //InserirDados();
             //InserirDadosEmMassa();
-            ConsultarDados();
+            //ConsultarDados();
+            //CadastrarPedido();
+           ConsultarPedidoCarregamentoAdiantado();
         }
 
+        private static void ConsultarPedidoCarregamentoAdiantado()
+        {
+            using var db = new Data.ApplicationContext();
+            var pedidos = db
+                .Pedidos
+                .Include(p=>p.Itens)
+                .ThenInclude(p=>p.Produto) //o que está dentro de include (itens)
+                .ToList();
+
+            Console.WriteLine(pedidos.Count);
+        }
+        private static void CadastrarPedido()
+        {
+            using var db = new Data.ApplicationContext();
+
+            var cliente = db.Clientes.FirstOrDefault();
+            var produto = db.Produtos.FirstOrDefault();
+
+            var pedido = new Pedido
+            {
+                ClienteId = cliente.Id,
+                IniciadoEm = DateTime.Now,
+                FinalizadoEm = DateTime.Now,
+                Observacao = "Pedido teste",
+                Status = StatusPedido.Anlise,
+                TipoFrete = TipoFrete.SemFrete,
+                Itens = new List<PedidoItem>
+                {
+                    new PedidoItem
+                    {
+                        ProdutoId = produto.Id,
+                        Desconto =0,
+                        Quantidade = 1,
+                        Valor = 10,
+                    }
+                }    
+            };
+            db.Pedidos.Add(pedido);
+            db.SaveChanges();
+
+            Console.ReadKey();
+        }
         private static void ConsultarDados()
         {
             using var db = new Data.ApplicationContext();

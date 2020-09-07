@@ -27,9 +27,22 @@ namespace Curso
             //ConsultarDados();
             //CadastrarPedido();
             //ConsultarPedidoCarregamentoAdiantado();
-            AtualizarDados();
+            //AtualizarDados();
+            RemoverRegistros();
         }
 
+        private static void RemoverRegistros()
+        {
+            using var db = new Data.ApplicationContext();
+            //var cliente = db.Clientes.Find(3);
+            var cliente = new Cliente { Id=4};
+            //db.Clientes.Remove(cliente);
+            //db.Remove(cliente);
+            db.Entry(cliente).State = EntityState.Deleted;
+
+            db.SaveChanges();
+            Console.ReadKey();
+        }
         private static void AtualizarDados()
         {
             using var db = new Data.ApplicationContext();

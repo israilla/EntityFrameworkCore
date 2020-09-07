@@ -2,6 +2,7 @@
 using Curso.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Linq;
 using System.Reflection.Metadata;
 
@@ -20,8 +21,12 @@ namespace Curso.Data
         {
             optionsBuilder
                 .UseLoggerFactory(_logger)
-                .EnableSensitiveDataLogging(); //exibir os valores dos parâmetros gerados
-            optionsBuilder.UseSqlServer("Data source=(localdb)\\mssqllocaldb;Initial Catalog=CursoEFCore;Integrated Security=true");
+                .EnableSensitiveDataLogging() //exibir os valores dos parâmetros gerados
+                .UseSqlServer("Data source=(localdb)\\mssqllocaldb;Initial Catalog=CursoEFCore;Integrated Security=true",
+                p=>p.EnableRetryOnFailure(
+                    maxRetryCount:2,
+                    maxRetryDelay: TimeSpan.FromSeconds(5),
+                    errorNumbersToAdd:null));
         }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder)
